@@ -1,0 +1,103 @@
+:root{
+  --bg:#f4f4f9;
+  --card:#ffffff;
+  --accent:#1e90ff;
+  --dark:#222;
+  --muted:#666;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.5;
+}
+.site-header{
+  text-align:center;
+  padding:36px 16px;
+  background:linear-gradient(90deg,#0f172a,#0b1020);
+  color:white;
+}
+.site-header h1{margin:0;font-size:2rem}
+.tagline{opacity:.9;margin-top:6px}
+.container{
+  max-width:900px;
+  margin:24px auto;
+  padding:0 16px;
+}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(11,15,30,0.06);
+  margin-bottom:16px;
+}
+.card h2{margin-top:0}
+a{color:var(--accent);text-decoration:none}
+.site-footer{
+  text-align:center;padding:14px 8px;color:white;background:#0b1020;margin-top:20px;
+}
+@media(max-width:600px){
+  .site-header{padding:28px 12px}
+  .site-header h1{
+    margin: 0;
+    font-style:normal ;
+    font-size: 2rem;
+    transition: all0.4a ease; 
+    cursor: pointer;
+  }}
+  .site-header h1:hover {
+    color: var(--accent);
+    font-size: 2.4rem;
+    transform: scale(1.1);
+    font-style: italic;
+}
+.social-links {
+  margin-top: 12px;
+}
+.social-links a {
+  font-size: 1.6rem;
+  margin-right: 14px;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: #ff4081; /* pink hover effect */
+}
+.logo-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.logo-img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+.site-header .tagline {
+  font-size: 1.1rem;
+  color: #ccc;
+  transition: all 0.4s ease;
+}
+
+.site-header .tagline:hover {
+  color: var(--accent);     /* changes to your accent color */
+  font-size: 1.2rem;        /* grows a bit */
+  font-style: italic;       /* becomes italic */
+  transform: scale(1.05);   /* slight zoom effect */
+}
